@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: "India's premier cricket quiz platform. Test your knowledge and compete globally.",
     type: "website",
   },
+  verification: {
+    google: "OCoD4oukReGhAoJ6wvSV6iea71XOJAa2NGqeYTN-OPM",
+  },
 };
 
 export default function RootLayout({
