@@ -11,12 +11,17 @@ export default function Footer() {
               <span className="text-2xl">🏏</span>
               <span className="text-white font-bold text-lg">Eura Gaming</span>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed mb-4">
+            <p className="text-sm text-gray-400 leading-relaxed mb-3">
               India&apos;s premier cricket quiz platform. Test your knowledge, compete globally,
               and celebrate the beautiful game of cricket.
             </p>
+            <p className="text-xs text-gray-500 leading-relaxed mb-2">
+              <strong className="text-gray-400">Eura Gaming Pvt. Ltd.</strong><br />
+              M3M Corner Walk, R-15, Ground Floor,<br />
+              Sector 74, Gurugram, Haryana &ndash; 122102, India
+            </p>
             <p className="text-xs text-gray-500">
-              © {new Date().getFullYear()} Eura Gaming. All rights reserved.
+              &copy; {new Date().getFullYear()} Eura Gaming Pvt. Ltd. All rights reserved.
             </p>
           </div>
 
@@ -105,10 +110,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500 space-y-1">
           <p>
             Cricket knowledge platform for entertainment purposes only. Not affiliated with any
             official cricket board or governing body.
+          </p>
+          <p>
+            <a href="mailto:support@euragaming.com" className="hover:text-gray-300 transition-colors">
+              support@euragaming.com
+            </a>
           </p>
         </div>
       </div>

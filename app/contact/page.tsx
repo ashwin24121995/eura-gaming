@@ -35,27 +35,29 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {/* Contact Info */}
             <div className="space-y-4">
-              {[
+              {([
                 {
                   icon: "📧",
                   title: "Email Support",
                   desc: "support@euragaming.com",
                   sub: "Response within 24 hours",
+                  link: undefined as string | undefined,
                 },
                 {
-                  icon: "❓",
-                  title: "FAQ",
-                  desc: "Check our FAQ page",
-                  sub: "Quick answers to common questions",
-                  link: "/faq",
+                  icon: "📍",
+                  title: "Registered Office",
+                  desc: "Eura Gaming Pvt. Ltd.",
+                  sub: "M3M Corner Walk, R-15, Ground Floor, Sector 74, Gurugram, Haryana – 122102, India",
+                  link: undefined as string | undefined,
                 },
                 {
                   icon: "🕐",
                   title: "Support Hours",
                   desc: "Mon–Sat, 9AM–6PM IST",
                   sub: "India Standard Time",
+                  link: undefined as string | undefined,
                 },
-              ].map((item) => (
+              ] as { icon: string; title: string; desc: string; sub: string; link?: string }[]).map((item) => (
                 <div key={item.title} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
                   <div className="text-2xl mb-2">{item.icon}</div>
                   <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>

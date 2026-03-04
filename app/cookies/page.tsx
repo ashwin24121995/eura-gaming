@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Cookie Policy | Eura Gaming",
-  description: "Read the Cookie Policy for Eura Gaming Cricket Quiz Platform.",
+  description: "Read the Cookie Policy for Eura Gaming Pvt. Ltd. Cricket Quiz Platform.",
 };
 
 export default function CookiesPage() {
@@ -17,23 +17,36 @@ export default function CookiesPage() {
           <div className="mb-8">
             <p className="text-sm text-indigo-600 font-medium mb-1">Legal</p>
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Cookie Policy</h1>
-            <p className="text-gray-500 text-sm">Last updated: February 27, 2026</p>
+            <p className="text-gray-500 text-sm">Last Updated: March 5, 2026</p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 space-y-8 text-gray-700 leading-relaxed">
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">1. What Are Cookies?</h2>
-              <p>
-                Cookies are small text files that are stored on your device when you visit a
-                website. They are widely used to make websites work more efficiently and to provide
-                information to website owners. This policy explains how Eura Gaming uses browser
-                storage technologies on our Platform.
+              <h2 className="text-xl font-bold text-gray-900 mb-3">1. Who We Are</h2>
+              <p className="mb-3">
+                This Cookie Policy is published by <strong>Eura Gaming Pvt. Ltd.</strong>{" "}
+                (&quot;Eura Gaming&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), the operator of{" "}
+                <strong>www.euragaming.com</strong>. Our registered address is:
+              </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm font-medium text-gray-700">
+                M3M Corner Walk, R-15, Ground Floor,<br />
+                Sector 74, Gurugram, Haryana &ndash; 122102, India
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">2. Do We Use Traditional HTTP Cookies?</h2>
+              <p className="mb-3">
+                <strong>No.</strong> The Platform does not use traditional HTTP cookies — the small
+                text files that websites typically place on your device to track sessions or
+                behaviour across visits. We do not use advertising cookies, analytics cookies,
+                social media tracking cookies, or third-party marketing cookies.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">2. How We Use Browser Storage</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">3. What We Use Instead — Browser Storage</h2>
               <p className="mb-4">
                 Eura Gaming does not use traditional HTTP cookies. Instead, we use two browser
                 storage mechanisms:
@@ -99,7 +112,7 @@ export default function CookiesPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">3. Essential Storage Only</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">4. Essential Storage Only</h2>
               <p>
                 All browser storage used by Eura Gaming is <strong>strictly essential</strong> for
                 the Platform to function. We do not use any tracking, analytics, advertising, or
@@ -109,7 +122,7 @@ export default function CookiesPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">4. Third-Party Cookies</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">5. Hosting Infrastructure</h2>
               <p>
                 Eura Gaming does not use any third-party cookies or tracking technologies. The
                 Platform is hosted on Vercel, which may set its own technical cookies as part of
@@ -127,7 +140,7 @@ export default function CookiesPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">5. How to Manage Storage</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">6. How to Manage Browser Storage</h2>
               <p className="mb-3">
                 You can clear all browser storage data at any time. Note that doing so will
                 permanently delete your account and quiz history. To clear storage:
@@ -141,7 +154,7 @@ export default function CookiesPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">6. Changes to This Policy</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">7. Changes to This Policy</h2>
               <p>
                 We may update this Cookie Policy from time to time. We will notify users of
                 significant changes by updating the &quot;Last updated&quot; date at the top of this page.
@@ -149,17 +162,21 @@ export default function CookiesPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">7. Contact Us</h2>
-              <p>
-                If you have any questions about our use of browser storage, please contact us at{" "}
-                <a href="mailto:privacy@euragaming.com" className="text-indigo-600 hover:underline">
-                  privacy@euragaming.com
-                </a>{" "}
-                or visit our{" "}
-                <Link href="/contact" className="text-indigo-600 hover:underline">
-                  Contact page
-                </Link>.
+              <h2 className="text-xl font-bold text-gray-900 mb-3">8. Contact Us</h2>
+              <p className="mb-3">
+                If you have any questions about this Cookie Policy, please contact us:
               </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm space-y-1">
+                <p><strong>Eura Gaming Pvt. Ltd.</strong></p>
+                <p>M3M Corner Walk, R-15, Ground Floor,</p>
+                <p>Sector 74, Gurugram, Haryana &ndash; 122102, India</p>
+                <p>
+                  Email:{" "}
+                  <a href="mailto:support@euragaming.com" className="text-indigo-600 hover:underline">
+                    support@euragaming.com
+                  </a>
+                </p>
+              </div>
             </section>
           </div>
 

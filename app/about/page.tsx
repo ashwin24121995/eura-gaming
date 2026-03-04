@@ -94,6 +94,27 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Company Info */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Company Information</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Eura Gaming is operated by <strong>Eura Gaming Pvt. Ltd.</strong>, a company incorporated
+              in India. We are headquartered in Gurugram, Haryana, and are proudly India-based, building
+              for India&apos;s massive cricket-loving community.
+            </p>
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm text-gray-700 space-y-1">
+              <p><strong>Eura Gaming Pvt. Ltd.</strong></p>
+              <p>M3M Corner Walk, R-15, Ground Floor,</p>
+              <p>Sector 74, Gurugram, Haryana – 122102, India</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:support@euragaming.com" className="text-indigo-600 hover:underline">
+                  support@euragaming.com
+                </a>
+              </p>
+            </div>
+          </div>
+
           {/* Contact Info */}
           <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-3">Get in Touch</h2>
