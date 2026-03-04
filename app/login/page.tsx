@@ -106,9 +106,6 @@ export default function LoginPage() {
           </p>
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-4">
-          Demo account: sachin@demo.com / demo123
-        </p>
       </div>
     </div>
   );
