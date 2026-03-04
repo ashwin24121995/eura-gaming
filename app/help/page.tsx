@@ -206,6 +206,23 @@ export default function HelpCenterPage() {
               </Link>
             </div>
           </div>
+
+          {/* Registered Office */}
+          <div className="mt-6 bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+            <h3 className="text-sm font-bold text-gray-900 mb-3">Registered Office</h3>
+            <div className="text-sm text-gray-600 space-y-0.5">
+              <p><strong>Eura Gaming Pvt. Ltd.</strong></p>
+              <p>M3M Corner Walk, R-15, Ground Floor,</p>
+              <p>Sector 74, Gurugram, Haryana &ndash; 122102, India</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:support@euragaming.com" className="text-indigo-600 hover:underline">
+                  support@euragaming.com
+                </a>
+              </p>
+              <p className="text-gray-400 text-xs pt-1">Support Hours: Mon&ndash;Sat, 9AM&ndash;6PM IST</p>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
