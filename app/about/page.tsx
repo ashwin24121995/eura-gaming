@@ -17,18 +17,23 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <div className="text-5xl mb-4">🏏</div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">About Eura Gaming</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-3">
               India&apos;s premier cricket quiz platform, built for fans who live and breathe cricket.
             </p>
+            <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-2 text-sm text-indigo-700 font-medium">
+              <span>🇮🇳</span>
+              <span>India-based &mdash; Headquartered in Gurugram, Haryana</span>
+            </div>
           </div>
 
           {/* Mission */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Eura Gaming was founded with a single mission: to provide Indian cricket enthusiasts with
-              an engaging, competitive platform to test their cricket knowledge through interactive quizzes
-              and global leaderboards.
+              <strong>Eura Gaming Pvt. Ltd.</strong> is an India-based company founded with a single
+              mission: to provide Indian cricket enthusiasts with an engaging, competitive platform to
+              test their cricket knowledge through interactive quizzes and global leaderboards. We are
+              headquartered in <strong>Gurugram, Haryana, India</strong>.
             </p>
             <p className="text-gray-600 leading-relaxed">
               We believe cricket is more than a sport — it is a passion, a culture, and a way of life for

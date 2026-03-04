@@ -68,7 +68,7 @@ export default function ReportIssuePage() {
           </div>
 
           {/* Info Banner */}
-          <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-6 text-sm text-indigo-700">
+          <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-4 text-sm text-indigo-700">
             <strong>Before reporting:</strong> Check our{" "}
             <Link href="/faq" className="underline hover:text-indigo-900">
               FAQ
@@ -78,6 +78,51 @@ export default function ReportIssuePage() {
               Help Center
             </Link>{" "}
             — your issue may already be answered there.
+          </div>
+
+          {/* Review Process */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-6">
+            <h2 className="text-base font-bold text-gray-900 mb-3">What Happens After You Report?</h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                {
+                  step: "1",
+                  icon: "📥",
+                  title: "Report Received",
+                  desc: "Your report is logged and assigned to our moderation team within 24 hours.",
+                },
+                {
+                  step: "2",
+                  icon: "🔍",
+                  title: "Review & Investigation",
+                  desc: "We investigate the issue. Bug reports are resolved within 3–5 business days. Content/account reports within 2 business days.",
+                },
+                {
+                  step: "3",
+                  icon: "✅",
+                  title: "Action & Follow-up",
+                  desc: "Action is taken (fix deployed, content removed, or account moderated). If you provided your email, we will notify you of the outcome.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="flex flex-col items-start gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+                      {item.step}
+                    </span>
+                    <span className="text-lg">{item.icon}</span>
+                  </div>
+                  <p className="font-semibold text-gray-900 text-sm">{item.title}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500">
+              <strong>Appeals:</strong> If you disagree with a moderation outcome, you may appeal by emailing{" "}
+              <a href="mailto:support@euragaming.com" className="text-indigo-600 hover:underline">
+                support@euragaming.com
+              </a>{" "}
+              with subject line <em>&quot;Appeal: [Your Report Reference]&quot;</em>. Appeals are reviewed within 5 business days and our final decision is binding.
+            </div>
           </div>
 
           {!submitted ? (

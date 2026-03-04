@@ -76,6 +76,16 @@ export default function Footer() {
                   Cookie Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/advertising" className="hover:text-white transition-colors">
+                  Advertising Disclosure
+                </Link>
+              </li>
+              <li>
+                <Link href="/accessibility" className="hover:text-white transition-colors">
+                  Accessibility Policy
+                </Link>
+              </li>
             </ul>
           </div>
 

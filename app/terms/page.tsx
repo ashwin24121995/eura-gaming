@@ -253,11 +253,23 @@ export default function TermsPage() {
             {/* Section 13 */}
             <section>
               <h2 className="text-xl font-bold text-gray-900 mb-3">13. Modifications to These Terms</h2>
+              <p className="mb-3">
+                We reserve the right to update or modify these Terms at any time at our sole
+                discretion. When we make changes, we will:
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-sm pl-2 mb-3">
+                <li>Update the <strong>&quot;Last Updated&quot;</strong> date at the top of this page</li>
+                <li>Post the revised Terms at the same URL: <strong>www.euragaming.com/terms</strong></li>
+                <li>For material changes, display a notice on the homepage for a reasonable period</li>
+              </ul>
+              <p className="mb-3">
+                We encourage you to review these Terms periodically, particularly before each quiz
+                session. It is your responsibility to stay informed of any updates.
+              </p>
               <p>
-                We reserve the right to update or modify these Terms at any time. Changes will be
-                indicated by updating the &quot;Last Updated&quot; date at the top of this page. We
-                encourage you to review these Terms periodically. Continued use of the Platform
-                after any changes constitutes your acceptance of the revised Terms.
+                <strong>Continued use of the Platform after the &quot;Last Updated&quot; date of any
+                revision constitutes your binding acceptance of the modified Terms.</strong> If you
+                do not agree to the revised Terms, you must stop using the Platform immediately.
               </p>
             </section>
 

@@ -78,6 +78,31 @@ const faqs = [
       },
     ],
   },
+  {
+    category: "Rules, Moderation & Enforcement",
+    items: [
+      {
+        q: "Can my account be suspended or terminated?",
+        a: "Yes. Under our Terms of Service, Eura Gaming Pvt. Ltd. reserves the right to suspend or terminate accounts for violations including: creating multiple accounts, using offensive or impersonating usernames, attempting to manipulate scores or rankings, engaging in abusive or fraudulent behaviour, or any conduct that harms the platform or its users. Suspensions may occur with or without prior notice.",
+      },
+      {
+        q: "Can I appeal a suspension or moderation decision?",
+        a: "Yes. If you believe your account was suspended in error, you may contact us at support@euragaming.com with your registered email address and a detailed explanation. We will review your appeal and respond within 5 business days. Our decision following a review is final.",
+      },
+      {
+        q: "What happens if I create multiple accounts?",
+        a: "Creating multiple accounts to gain competitive advantage or manipulate leaderboard rankings is strictly prohibited under our Terms of Service. All associated accounts may be suspended immediately.",
+      },
+      {
+        q: "Are there rules about usernames?",
+        a: "Yes. Usernames are displayed publicly on the leaderboard. Usernames must not be offensive, obscene, discriminatory, impersonate any person or brand, or contain personal information. We reserve the right to remove or modify any username that violates this policy without prior notice.",
+      },
+      {
+        q: "Where can I read the full Terms of Service?",
+        a: "Our complete Terms of Service, including all enforcement rights, moderation policies, and legal terms, are available at www.euragaming.com/terms.",
+      },
+    ],
+  },
 ];
 
 export default function FAQPage() {
