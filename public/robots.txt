@@ -1,0 +1,25 @@
+# robots.txt for euragaming.com
+# Generated: March 5, 2026
+
+User-agent: *
+Allow: /
+
+# Disallow private/user-specific pages
+Disallow: /dashboard
+Disallow: /quiz
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Sitemap
+Sitemap: https://www.euragaming.com/sitemap.xml

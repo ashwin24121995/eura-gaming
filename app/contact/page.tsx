@@ -41,7 +41,14 @@ export default function ContactPage() {
                   title: "Email Support",
                   desc: "support@euragaming.com",
                   sub: "Response within 24 hours",
-                  link: undefined as string | undefined,
+                  link: "mailto:support@euragaming.com" as string | undefined,
+                },
+                {
+                  icon: "📞",
+                  title: "Phone Support",
+                  desc: "+91-8588846667",
+                  sub: "Mon–Sat, 10AM–6PM IST",
+                  link: "tel:+918588846667" as string | undefined,
                 },
                 {
                   icon: "📍",
@@ -53,8 +60,8 @@ export default function ContactPage() {
                 {
                   icon: "🕐",
                   title: "Support Hours",
-                  desc: "Mon–Sat, 9AM–6PM IST",
-                  sub: "India Standard Time",
+                  desc: "Mon–Sat, 10AM–6PM IST",
+                  sub: "India Standard Time (UTC+5:30)",
                   link: undefined as string | undefined,
                 },
               ] as { icon: string; title: string; desc: string; sub: string; link?: string }[]).map((item) => (
