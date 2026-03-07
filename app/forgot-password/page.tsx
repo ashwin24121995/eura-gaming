@@ -71,7 +71,8 @@ export default function ForgotPasswordPage() {
                 reset link shortly.
               </p>
               <div className="bg-indigo-50 rounded-xl p-4 text-sm text-indigo-700 mb-6">
-                Note: This is a demo application. In production, a real email would be sent.
+                Please also check your spam or junk folder. If you do not receive an email within 10 minutes, contact us at{" "}
+                <a href="mailto:support@euragaming.com" className="underline font-semibold">support@euragaming.com</a>.
               </div>
             </div>
           )}

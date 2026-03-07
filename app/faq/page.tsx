@@ -66,7 +66,7 @@ const faqs = [
     items: [
       {
         q: "I forgot my password. What should I do?",
-        a: "Click 'Forgot Password?' on the login page, enter your registered email address, and follow the instructions. In this demo version, password reset is simulated.",
+        a: "Click 'Forgot Password?' on the login page, enter your registered email address, and click 'Send Reset Link'. Password reset instructions will be sent to your registered email address. Please check your spam or junk folder if you do not receive the email within 10 minutes. For further assistance, contact support@euragaming.com.",
       },
       {
         q: "Can I change my display name?",
