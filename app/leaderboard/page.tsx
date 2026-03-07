@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAllUsersForLeaderboard, getCurrentUser } from "@/lib/auth";
+import { getAllUsersForLeaderboard, getCurrentUser, seedLeaderboardIfEmpty } from "@/lib/auth";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -24,6 +24,7 @@ export default function LeaderboardPage() {
   const [currentUserId, setCurrentUserId] = useState<string | null>(null);
 
   useEffect(() => {
+    seedLeaderboardIfEmpty();
     const users = getAllUsersForLeaderboard();
     setEntries(users);
     const user = getCurrentUser();

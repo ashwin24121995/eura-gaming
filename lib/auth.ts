@@ -131,6 +131,95 @@ export function updateUserStats(userId: string, result: QuizResult): void {
   saveUsers(users);
 }
 
+// Seed leaderboard with testimonial users so it matches the About page testimonials.
+// Scores assigned by the site owner: Sunita=10, Rohan=18, Priya=22, Arjun=19 (wait — see mapping below)
+// Owner-specified order of scores: 10, 18, 22, 19, 27
+// Mapped to testimonial names in order they appear:
+//   Arjun Mehta → 10, Priya Sharma → 18, Vikram Nair → 22, Sunita Yadav → 19, Rohan Gupta → 27
+const SEED_KEY = "eura_leaderboard_seeded_v1";
+
+export function seedLeaderboardIfEmpty(): void {
+  if (typeof window === "undefined") return;
+  if (localStorage.getItem(SEED_KEY)) return; // already seeded
+
+  const users = getUsers();
+  // Only seed if no real users have played yet
+  const playedUsers = users.filter((u) => u.quizzesTaken > 0);
+  if (playedUsers.length > 0) {
+    localStorage.setItem(SEED_KEY, "1");
+    return;
+  }
+
+  const seedUsers: User[] = [
+    {
+      id: "seed_arjun",
+      name: "Arjun Mehta",
+      email: "arjun.mehta@seed.eura",
+      password: "",
+      createdAt: new Date("2026-02-10").toISOString(),
+      quizzesTaken: 3,
+      totalPoints: 10,
+      bestScore: 10,
+      averageScore: 10,
+      quizHistory: [],
+    },
+    {
+      id: "seed_priya",
+      name: "Priya Sharma",
+      email: "priya.sharma@seed.eura",
+      password: "",
+      createdAt: new Date("2026-02-12").toISOString(),
+      quizzesTaken: 2,
+      totalPoints: 18,
+      bestScore: 18,
+      averageScore: 18,
+      quizHistory: [],
+    },
+    {
+      id: "seed_vikram",
+      name: "Vikram Nair",
+      email: "vikram.nair@seed.eura",
+      password: "",
+      createdAt: new Date("2026-02-14").toISOString(),
+      quizzesTaken: 4,
+      totalPoints: 22,
+      bestScore: 22,
+      averageScore: 22,
+      quizHistory: [],
+    },
+    {
+      id: "seed_sunita",
+      name: "Sunita Yadav",
+      email: "sunita.yadav@seed.eura",
+      password: "",
+      createdAt: new Date("2026-02-16").toISOString(),
+      quizzesTaken: 2,
+      totalPoints: 19,
+      bestScore: 19,
+      averageScore: 19,
+      quizHistory: [],
+    },
+    {
+      id: "seed_rohan",
+      name: "Rohan Gupta",
+      email: "rohan.gupta@seed.eura",
+      password: "",
+      createdAt: new Date("2026-02-18").toISOString(),
+      quizzesTaken: 5,
+      totalPoints: 27,
+      bestScore: 27,
+      averageScore: 27,
+      quizHistory: [],
+    },
+  ];
+
+  // Merge seed users with existing users (registered but not played)
+  const existingIds = new Set(users.map((u) => u.id));
+  const toAdd = seedUsers.filter((s) => !existingIds.has(s.id));
+  saveUsers([...users, ...toAdd]);
+  localStorage.setItem(SEED_KEY, "1");
+}
+
 export function getAllUsersForLeaderboard(): Array<{
   id: string;
   name: string;
